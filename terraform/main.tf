@@ -51,12 +51,3 @@ module "rds" {
   private_subnet1      = module.vpc.private_subnet1
   db_security_group_id = module.sg.database_security_groups_id
 }
-
-
-# s3
-module "s3" {
-  source = "./modules/s3"
-  bucket_name = var.bucket_name
-  bucket_tag = var.bucket_tag
-  env = var.env
-}

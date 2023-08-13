@@ -5,7 +5,3 @@ output "web_server_ip" {
 output "rds_hostname" {
   value = module.rds.rds_hostname
 }
-
-output "s3_domain_name" {
-  value = module.s3.bucket_domain_name
-}

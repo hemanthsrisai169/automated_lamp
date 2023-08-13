@@ -1,3 +1,16 @@
+# AWS
+variable "region" {
+  default     = "us-east-1"
+  description = "Name of the AWS region"
+  type        = string
+}
+
+variable "aws_profile" {
+  default     = "default"
+  description = "Name of the AWS Profile"
+  type        = string
+}
+
 variable "env" {
   default     = "Dev"
   description = "Name of the environment"
@@ -116,15 +129,3 @@ variable "db_password" {
 }
 
 
-# S3
-variable "bucket_name" {
-    description = "Name of the bucket"
-    type = string
-    default = "my-bucket-9878"
-}
-
-variable "bucket_tag" {
-    description = "Name of the bucket tags"
-    type = string
-    default = "My bucket"
-}
