@@ -25,15 +25,6 @@
     login_host: "{{ db_host }}"
   when: check_file.stat.exists
 
-# - name: Check index file
-#   stat: 
-#     path: "/var/www/html/index.html.tmp"
-#   register: check_default_index_file
-
-# - name: Rename default index file
-#   command: "mv /var/www/html/index.html /var/www/html/index.html.tmp"
-#   when: not check_default_index_file.stat.exists
-
 - name: Copy all files to /var/www/{{ web_host }}
   shell: cp -r {{ repo_dir }}/* /var/www/{{ web_host }}
 

@@ -11,29 +11,57 @@ variable "web_vpc_tags" {
     default = "web-vpc"
 }
 
-
-# subnet 1
-variable "public_sid1"{
-
+variable "availability_zones" {
 }
 
-variable "public_sid1_name"{
-
+variable "public_subnet_cidr_blocks" {
+  
 }
 
-# subnet 2
-variable "private_sid1"{
-
+variable "private_subnet_cidr_blocks" {
+  
 }
 
-variable "private_sid1_name"{
+
+
+# # public subnet 1
+# variable "public_sid1"{
+
+# }
+
+# variable "public_sid1_name"{
+
+# }
+
+
+
+
+# # subnet 2
+# variable "private_sid1"{
+
+# }
+
+# variable "private_sid1_name"{
     
-}
+# }
 
-variable "az1" {
-    
-}
+# # subnet 3
+# variable "private_sid2"{
 
-variable "az2" {
+# }
+
+# variable "private_sid2_name"{
     
-}
+# }
+
+# variable "az1" {
+    
+# }
+
+# variable "az2" {
+    
+# }
+
+# variable "az3" {
+    
+# }

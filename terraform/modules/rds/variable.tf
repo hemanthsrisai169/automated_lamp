@@ -28,11 +28,7 @@ variable "password" {
 }
 
 
-variable "public_subnet1" {
-
-}
-
-variable "private_subnet1" {
+variable "private_subnets" {
 
 }
 

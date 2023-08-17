@@ -28,31 +28,20 @@ variable "web_vpc_tenancy" {
   type    = string
 }
 
-variable "public_sid1_block" {
-  default     = "10.0.1.0/24"
-  description = "Public subnet block"
-  type        = string
+variable "availability_zones" {
+  type        = list(string)
+  description = "List of availability zones"
 }
 
-variable "public_sid1_block_name" {
-  default     = "public-subnet-1"
-  description = "Name of Public subnet block"
-  type        = string
+variable "public_subnet_cidr_blocks" {
+  type        = list(string)
+  description = "List of Public Subnet Blocks"
 }
 
-variable "private_sid1_block" {
-  default     = "10.0.2.0/24"
-  description = "Private subnet block"
-  type        = string
+variable "private_subnet_cidr_blocks" {
+  type        = list(string)
+  description = "List of Private Subnet Blocks"
 }
-
-variable "private_sid1_block_name" {
-  default     = "private-subnet-1"
-  description = "Name of Private subnet block"
-  type        = string
-}
-
-
 
 # EC2
 variable "ami" {
@@ -79,6 +68,11 @@ variable "az2" {
   type        = string
 }
 
+variable "az3" {
+  default     = "us-east-1b"
+  description = "Name of AZs"
+  type        = string
+}
 
 # RDS
 variable "identifier" {

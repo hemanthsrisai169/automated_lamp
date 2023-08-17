@@ -6,7 +6,7 @@ variable "type"{
    
 }
 
-variable "az1"{
+variable "az"{
    
 }
 
@@ -16,7 +16,7 @@ variable "key_pair"{
 
 
 
-variable "public_subnet1"{
+variable "public_subnet_ids"{
 
 }
 
