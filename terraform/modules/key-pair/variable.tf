@@ -4,11 +4,8 @@ variable "algorithm_type" {
 }
 
 variable "key_name" {
-    default = "web-test"
-    description = "Name of Key-Pair"
 }
 
-variable "key_filename" {
-  default = "web-test.pem"
-  description = "Name of Key-Pair file"
+variable "home_dir" {
+
 }

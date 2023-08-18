@@ -8,12 +8,11 @@ ansible_interpreter_python: /usr/bin/python3
 # database settings
 db_host: "gym.cpwf6w60zfee.us-east-2.rds.amazonaws.com"
 db_name: gymdb
-db_user: admin
 login_port: 3306
 
 # web server
 web_port: 80
-web_host: "18.224.38.3"
+web_host: "3.15.235.156"
 
 
 # git settings
@@ -24,6 +23,4 @@ repo_dir: "/home/ubuntu/lamp-in-production"
 
 # SQL script file
 script_file: "/home/ubuntu/lamp-in-production/gymdb.sql"
-
-
 ...

@@ -23,3 +23,7 @@ engine         = "mysql"
 engine_version = "5.7"
 username       = "admin"
 db_password    = "Password0123"
+
+# key-pair
+home_dir = "/home/dhan"
+key_name = "lamp-test"

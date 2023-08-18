@@ -123,3 +123,15 @@ variable "db_password" {
 }
 
 
+# Key Pair
+variable "key_name" {
+  default     = "web-test"
+  description = "Name of Key-Pair"
+}
+
+# User home directory
+variable "home_dir" {
+  default     = ""
+  description = "Name of the user home directory"
+  type        = string
+}

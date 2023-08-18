@@ -1,7 +1,7 @@
-output "private_key" {
-  value = tls_private_key.web-key.private_key_pem
+output "key_name"{
+  value = aws_key_pair.deployer.key_name
 }
 
-output "key_name" {
-  value = aws_key_pair.deployer.key_name
+output "pem_key_file_path" {
+  value = local_file.web-test.filename
 }
