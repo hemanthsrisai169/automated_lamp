@@ -50,14 +50,14 @@ module "ec2" {
 
 # rds
 module "rds" {
-  source            = "./modules/rds"
-  identifier        = var.identifier
-  instance_class    = var.instance_class
-  allocated_storage = var.db_storage
-  engine            = var.engine
-  engine_version    = var.engine_version
-  username          = var.username
-  password          = var.db_password
+  source               = "./modules/rds"
+  identifier           = var.identifier
+  instance_class       = var.instance_class
+  allocated_storage    = var.db_storage
+  engine               = var.engine
+  engine_version       = var.engine_version
+  username             = var.username
+  password             = var.db_password
   private_subnets      = module.vpc.private_subnet_ids
   db_security_group_id = module.sg.database_security_groups_id
 }
